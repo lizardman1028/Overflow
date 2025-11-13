@@ -1,18 +1,16 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FloatLevelController : MonoBehaviour
-{
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+public class FloatLevelController : MonoBehaviour {
+  [SerializeField]
+  private Transform playerPlusWater;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+  private void Update() {
+    if (Input.GetKeyDown(KeyCode.Space)) {
+      var goUpVector = Vector3.up;
+      playerPlusWater.transform.position += 1f * goUpVector;
     }
+  }
 }

@@ -10,21 +10,17 @@ public class PlayerMovement : MonoBehaviour {
   [SerializeField]
   Rigidbody2D rigidBody2D;
   private void Update() {
-    if (Input.GetKeyDown(KeyCode.A)) {
-      var velocity = new Vector2(-groundVelocity, 0);
-      rigidBody2D.velocity += velocity;
-    } else if (Input.GetKeyUp(KeyCode.A)) {
-      var velocity = new Vector2(-groundVelocity, 0);
-      rigidBody2D.velocity -= velocity;
-      //rigidBody2D.AddForce(force, ForceMode2D.Impulse);
-    }
+    if (Input.GetKey(KeyCode.A)) {
+      rigidBody2D.velocity = new Vector2(-groundVelocity, 0);;
+    } 
     
-    if (Input.GetKeyDown(KeyCode.D)) {
-      rigidBody2D.velocity += new Vector2(groundVelocity, 0);
-    } else if (Input.GetKeyUp(KeyCode.D)) {
-      rigidBody2D.velocity -= new Vector2(groundVelocity, 0);
+    else if (Input.GetKey(KeyCode.D)) {
+      rigidBody2D.velocity = new Vector2(groundVelocity, 0);
     }
-    
+
+    else {
+      rigidBody2D.velocity = new Vector2(0, 0);
+    }
     
   }
 }
