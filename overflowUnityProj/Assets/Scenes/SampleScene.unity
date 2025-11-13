@@ -654,8 +654,8 @@ GameObject:
   m_Component:
   - component: {fileID: 606205440}
   - component: {fileID: 606205439}
-  - component: {fileID: 606205442}
   - component: {fileID: 606205441}
+  - component: {fileID: 606205442}
   - component: {fileID: 606205443}
   m_Layer: 0
   m_Name: Player
@@ -744,9 +744,9 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 10
   m_AngularDrag: 0.05
-  m_GravityScale: 0
+  m_GravityScale: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -816,6 +816,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   groundVelocity: 5
+  impulseMagnitudeMovement: 3
+  dashForce: 500
   rigidBody2D: {fileID: 606205441}
 --- !u!1 &619394800
 GameObject:
@@ -1160,7 +1162,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.010885348, g: 0.14150941, b: 0, a: 1}
+  m_Color: {r: 0, g: 0.14117648, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
