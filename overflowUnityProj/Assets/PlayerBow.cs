@@ -35,6 +35,7 @@ public class PlayerBow : IBaseWeapon
 
     void Update()
     {
+      Debug.Log("WORKING?");
         if (Input.GetMouseButtonDown(0))
         {
             StartCharge();

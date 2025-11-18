@@ -20,6 +20,7 @@ public class PlayerGun : IBaseWeapon
     {
         if (Input.GetMouseButtonDown(0)) // Left click
         {
+          Debug.Log("WORKING?");
             Shoot();
         }
     }
