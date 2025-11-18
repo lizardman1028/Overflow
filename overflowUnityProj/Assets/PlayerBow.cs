@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerBow : MonoBehaviour
+public class PlayerBow : IBaseWeapon
 {
     public GameObject arrowPrefab;
     public Transform shootPoint;
@@ -19,6 +19,14 @@ public class PlayerBow : MonoBehaviour
     private bool isCharging = false;
     private LineRenderer lineRenderer;
 
+    public void Enable() {
+      this.enabled = true;
+    }
+    
+    public void Disable() {
+      this.enabled = false;
+    }
+    
     void Start()
     {
         lineRenderer = GetComponent<LineRenderer>();
@@ -69,6 +77,7 @@ public class PlayerBow : MonoBehaviour
         Vector2 direction = (mousePos - transform.position).normalized;
 
         GameObject arrow = Instantiate(arrowPrefab, shootPoint.position, Quaternion.identity);
+        arrow.transform.parent = transform;
         Rigidbody2D rb = arrow.GetComponent<Rigidbody2D>();
         rb.velocity = direction * currentPower;
 
@@ -89,7 +98,7 @@ public class PlayerBow : MonoBehaviour
 
         for (i = 0; i < trajectoryPoints; i++)
         {
-            float t = i * timeBetweenPoints;
+            float t = i * timeBetweenPoints /* Time.deltaTime*/;
             Vector2 newPos = (Vector2)shootPoint.position + startVelocity * t + 0.5f * Physics2D.gravity * (t * t);
             totalDistance += Vector2.Distance(prevPos, newPos);
 

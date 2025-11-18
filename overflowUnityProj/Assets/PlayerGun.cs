@@ -1,11 +1,20 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerGun : MonoBehaviour
+public class PlayerGun : IBaseWeapon
 {
     public GameObject bulletPrefab;  // Assign your bullet prefab in Inspector
     public float bulletSpeed = 10f;
+
+    public void Enable() {
+      this.enabled = true;
+    }
+    
+    public void Disable() {
+      this.enabled = false;
+    }
 
     void Update()
     {

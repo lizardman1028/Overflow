@@ -1490,6 +1490,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerPlusWater
       objectReference: {fileID: 0}
+    - target: {fileID: 5516530707281971037, guid: 11a17b90ee36a4148b7fabae7a61b9ed, type: 3}
+      propertyPath: m_UseWorldSpace
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5516530707281971037, guid: 11a17b90ee36a4148b7fabae7a61b9ed, type: 3}
+      propertyPath: m_Positions.Array.data[0].y
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5516530707281971037, guid: 11a17b90ee36a4148b7fabae7a61b9ed, type: 3}
+      propertyPath: m_Positions.Array.data[1].y
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 8996823990207532639, guid: 11a17b90ee36a4148b7fabae7a61b9ed, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
