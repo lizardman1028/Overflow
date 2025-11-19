@@ -6,9 +6,9 @@ public class PlayerBow : IBaseWeapon
 {
     public GameObject arrowPrefab;
     public Transform shootPoint;
-    public float minPower = 8f;
-    public float maxPower = 20f;
-    public float chargeRate = 12f;
+    public float minPower = 12f;
+    public float maxPower = 30f;
+    public float chargeRate = 16f;
 
     [Header("Trajectory Settings")]
     public int trajectoryPoints = 30;   // number of sampled points

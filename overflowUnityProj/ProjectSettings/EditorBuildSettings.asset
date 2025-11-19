@@ -5,7 +5,25 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 1
+    path: Assets/Scenes/Copy Main Scene Timmy Play Around.unity
+    guid: 0d267c0a03a144d4c998551fcde9b37f
+  - enabled: 1
+    path: Assets/Scenes/Lv 1 Tutorial.unity
+    guid: 6c69515771e7274419bb764b67b35261
+  - enabled: 1
+    path: Assets/Scenes/Lv 2 Seagull.unity
+    guid: 1117452715b335440b971e95dfc30f31
+  - enabled: 1
+    path: Assets/Scenes/Lv 2.5 Bow Obtention.unity
+    guid: af811daab323bdd4886ac88016f0067c
+  - enabled: 1
+    path: Assets/Scenes/Lv 3 Butterfly.unity
+    guid: 03d96a899cdb2774180a7033a4e1374c
+  - enabled: 1
+    path: Assets/Scenes/Lv 4 Congratulations.unity
+    guid: 7708de9b145b8024ab4351fe98ae8e3b
   m_configObjects: {}
