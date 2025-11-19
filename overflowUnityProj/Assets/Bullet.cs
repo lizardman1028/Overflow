@@ -24,5 +24,15 @@ public class Bullet : MonoBehaviour
 
             Destroy(gameObject); // destroy bullet on hit
         }
+        if (other.CompareTag("Pirate")) // or "Butterfly" if you have that tag
+        {
+            PirateHealth butterfly = other.GetComponent<PirateHealth>();
+            if (butterfly != null)
+            {
+                butterfly.AddHealth(1);
+            }
+
+            Destroy(gameObject); // destroy bullet on hit
+        }
     }
 }
