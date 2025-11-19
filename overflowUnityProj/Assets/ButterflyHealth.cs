@@ -22,13 +22,15 @@ public class ButterflyHealth : MonoBehaviour
     public string line5 = "Keep raising those water levels bud! Reach the exit and free me from my corporeal self! Ascend!!!";
 
 
+    private const int TUTORIAL_SCENE_INDEX = 0;
+    
     //TEMP!!!
     [SerializeField]
     private FloatLevelController floatLevelController;
 
     void Start()
     {
-        if (SceneManager.GetActiveScene().buildIndex == 1)
+        if (SceneManager.GetActiveScene().buildIndex == TUTORIAL_SCENE_INDEX)
         {
             pirateText.ShowText(line1);
             currentLine += 1;
@@ -41,7 +43,7 @@ public class ButterflyHealth : MonoBehaviour
     {
         health += amount;
         health = Mathf.Clamp(health, 0, maxHealth);
-        if (health >= 3 && currentLine == 2 && SceneManager.GetActiveScene().buildIndex == 1)
+        if (health >= 3 && currentLine == 2 && SceneManager.GetActiveScene().buildIndex == TUTORIAL_SCENE_INDEX)
         {
             pirateText.ShowText(line2);
             currentLine += 1;
@@ -53,7 +55,7 @@ public class ButterflyHealth : MonoBehaviour
           burstSound.pitch = currentPitch;
           burstSound.Play();  
           currentPitch = Mathf.Min(currentPitch + pitchIncreaseAmount);
-            if (SceneManager.GetActiveScene().buildIndex == 1)
+            if (SceneManager.GetActiveScene().buildIndex == TUTORIAL_SCENE_INDEX)
             {
                 if (currentLine == 3)
                 {
