@@ -22,7 +22,7 @@ public class WeaponPickup : MonoBehaviour {
   private void OnTriggerEnter2D(Collider2D other) {
     if (other.CompareTag("Player")) {
       if (!other.GetComponent<WeaponSwitcher>().weapons.Contains(WeaponToGrant)) {
-        other.GetComponent<WeaponSwitcher>().weapons.Add(WeaponToGrant);
+        other.GetComponent<WeaponSwitcher>().AddWeapon(WeaponToGrant);
         transform.gameObject.SetActive(false);
       }
     }

@@ -22,6 +22,13 @@ public class WeaponSwitcher : MonoBehaviour {
     weapons[0].Enable();
   }
 
+  public void AddWeapon(IBaseWeapon weapon) {
+    weapons.Add(weapon);
+    if (weapons.Count == 1) {
+      weapons[0].Enable();
+    }
+  }
+  
   private void EnableWeapon(int i) {
     foreach (IBaseWeapon weapon in weapons) {
       weapon.Disable();
