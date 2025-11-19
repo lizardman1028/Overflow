@@ -34,5 +34,15 @@ public class Bullet : MonoBehaviour
 
             Destroy(gameObject); // destroy bullet on hit
         }
+        if (other.CompareTag("WeaponObject")) // or "Butterfly" if you have that tag
+        {
+            FactorialWeaponObject weapon = other.GetComponent<FactorialWeaponObject>();
+            if (weapon != null)
+            {
+                weapon.Hit();
+            }
+
+            Destroy(gameObject); // destroy bullet on hit
+        }
     }
 }
