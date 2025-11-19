@@ -6,13 +6,18 @@ using UnityEngine;
 public class WeaponSwitcher : MonoBehaviour {
   [SerializeField]
   public List<IBaseWeapon> weapons;
-
-  private int selectedWeapon = 1;
+  [HideInInspector]
+  public int selectedWeapon = 0;
 
   private void Start() {
+    if (weapons == null) {
+      weapons = new List<IBaseWeapon>();
+    }
+    
     foreach (IBaseWeapon weapon in weapons) {
       weapon.Disable();
     }
+    
 
     weapons[0].Enable();
   }
