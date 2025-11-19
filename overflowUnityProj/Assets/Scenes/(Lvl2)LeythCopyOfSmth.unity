@@ -1097,7 +1097,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 09e33eb9f2a09734bb4860b0f61da2b8, type: 3}
+  m_audioClip: {fileID: 8300000, guid: a8ad67107760a4f8e9499a20ded63380, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -1653,6 +1653,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameOverCanvas: {fileID: 1112709469}
+  playerGun: {fileID: 0}
 --- !u!4 &1300183347
 Transform:
   m_ObjectHideFlags: 0
@@ -1769,6 +1770,63 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 928026482622244395, guid: 2851a4780f5328649aff323221ee4e15, type: 3}
   m_PrefabInstance: {fileID: 1304125886}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1415714489
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4883221135470485897, guid: de136d5e0bb7241d68667e178672c2c2, type: 3}
+      propertyPath: m_Name
+      value: BackgroundMusic
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675557420306926612, guid: de136d5e0bb7241d68667e178672c2c2, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 6.812239
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675557420306926612, guid: de136d5e0bb7241d68667e178672c2c2, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.7872863
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675557420306926612, guid: de136d5e0bb7241d68667e178672c2c2, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.11762194
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675557420306926612, guid: de136d5e0bb7241d68667e178672c2c2, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675557420306926612, guid: de136d5e0bb7241d68667e178672c2c2, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675557420306926612, guid: de136d5e0bb7241d68667e178672c2c2, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675557420306926612, guid: de136d5e0bb7241d68667e178672c2c2, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675557420306926612, guid: de136d5e0bb7241d68667e178672c2c2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675557420306926612, guid: de136d5e0bb7241d68667e178672c2c2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675557420306926612, guid: de136d5e0bb7241d68667e178672c2c2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: de136d5e0bb7241d68667e178672c2c2, type: 3}
 --- !u!1001 &1429163931
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2716,7 +2774,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0, g: 0.11372549, b: 0, a: 1}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -2851,3 +2909,4 @@ SceneRoots:
   - {fileID: 1300183347}
   - {fileID: 1577060804}
   - {fileID: 1968266692}
+  - {fileID: 1415714489}
