@@ -40,7 +40,11 @@ public class WeaponSwitcherGui : MonoBehaviour {
 
     if (weaponSwitcher.weapons.Count >= 3) {
       factorial.color = Color.white;
-    }
+            if (weaponSwitcher.selectedWeapon == 2)
+            {
+                factorial.color = Color.black;
+            }
+        }
     else {
       factorial.color = Color.clear;
     }

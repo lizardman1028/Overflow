@@ -275,7 +275,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 106985784}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7a8c0e20a07927e49ac113c79f70d31a, type: 3}
   m_Name: 
@@ -284,6 +284,17 @@ MonoBehaviour:
   bulletSpeed: 10
   canShoot: 1
   shootSound: {fileID: 106985787}
+--- !u!114 &106985793 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6089438398720436868, guid: 11a17b90ee36a4148b7fabae7a61b9ed, type: 3}
+  m_PrefabInstance: {fileID: 504901215}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 106985784}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2171fa09393616b47b95fb3edb1a0c00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &299297421 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4670152551075176849, guid: 11a17b90ee36a4148b7fabae7a61b9ed, type: 3}
@@ -450,6 +461,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8858605599521871638, guid: 16aea3620bcf641d0b4419d4ae2e94e2, type: 3}
+      propertyPath: shouldBeFact
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8858605599521871638, guid: 16aea3620bcf641d0b4419d4ae2e94e2, type: 3}
       propertyPath: WeaponToGrant
       value: 
       objectReference: {fileID: 0}
@@ -489,8 +504,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3873851260038886857, guid: 11a17b90ee36a4148b7fabae7a61b9ed, type: 3}
       propertyPath: weapons.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 3873851260038886857, guid: 11a17b90ee36a4148b7fabae7a61b9ed, type: 3}
+      propertyPath: weapons.Array.data[1]
+      value: 
+      objectReference: {fileID: 106985793}
     - target: {fileID: 4403384131012772422, guid: 11a17b90ee36a4148b7fabae7a61b9ed, type: 3}
       propertyPath: m_Layer
       value: 8

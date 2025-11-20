@@ -6,11 +6,16 @@ public class WeaponPickup : MonoBehaviour {
   public IBaseWeapon WeaponToGrant;
 
   public bool shouldBeBow = false;
+    public bool shouldBeFact = false;
   // Start is called before the first frame update
   void Start() {
     if (shouldBeBow) {
       WeaponToGrant = FindAnyObjectByType<PlayerBow>();
     }
+    if(shouldBeFact)
+        {
+            WeaponToGrant = FindAnyObjectByType<PlayerFactorial>();
+        }
     else {
       WeaponToGrant = FindAnyObjectByType<PlayerGun>();
     }
