@@ -11,10 +11,12 @@ public class WeaponPickup : MonoBehaviour {
   void Start() {
     if (shouldBeBow) {
       WeaponToGrant = FindAnyObjectByType<PlayerBow>();
+      return;
     }
     if(shouldBeFact)
         {
             WeaponToGrant = FindAnyObjectByType<PlayerFactorial>();
+            return;
         }
     else {
       WeaponToGrant = FindAnyObjectByType<PlayerGun>();
